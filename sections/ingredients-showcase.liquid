@@ -1,0 +1,146 @@
+{%- style -%}
+  .ingredients-showcase {
+    background-color: #234E3F;
+    padding: 8rem 0;
+    color: #E8DFC8;
+  }
+
+  .ingredients__heading {
+    font-family: var(--pw-font-heading);
+    color: #C9A227;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .ingredients__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+  }
+
+  .ingredient-item {
+    text-align: center;
+    transition: transform 0.4s ease;
+  }
+
+  .ingredient-item:hover {
+    transform: scale(1.05);
+  }
+
+  .ingredient__image-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(232, 223, 200, 0.1);
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #C9A227;
+    overflow: hidden;
+  }
+
+  .ingredient__image-wrapper span {
+    font-family: var(--pw-font-heading);
+    font-size: 4rem;
+    color: #C9A227;
+    opacity: 0.5;
+  }
+
+  .ingredient__name {
+    font-family: var(--pw-font-heading);
+    color: #C9A227;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  .ingredient__benefit {
+    font-family: var(--pw-font-body);
+    color: #E8DFC8;
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ingredients__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ingredients-showcase {
+      padding: 5rem 0;
+    }
+    .ingredients__heading {
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+    .ingredients__grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem 2rem;
+    }
+    .ingredient__image-wrapper {
+      width: 120px;
+      height: 120px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="ingredients-showcase">
+  <div class="page-width">
+    <h2 class="ingredients__heading">Power of Nature's Finest Ingredients</h2>
+    <div class="ingredients__grid">
+      <div class="ingredient-item">
+        <div class="ingredient__image-wrapper"><span>1</span></div>
+        <strong class="ingredient__name">Onion</strong>
+        <p class="ingredient__benefit">Stimulates hair growth</p>
+      </div>
+      <div class="ingredient-item">
+        <div class="ingredient__image-wrapper"><span>2</span></div>
+        <strong class="ingredient__name">Rosemary</strong>
+        <p class="ingredient__benefit">Strengthens hair follicles</p>
+      </div>
+      <div class="ingredient-item">
+        <div class="ingredient__image-wrapper"><span>3</span></div>
+        <strong class="ingredient__name">Aloe Vera</strong>
+        <p class="ingredient__benefit">Deep scalp nourishment</p>
+      </div>
+      <div class="ingredient-item">
+        <div class="ingredient__image-wrapper"><span>4</span></div>
+        <strong class="ingredient__name">Amla</strong>
+        <p class="ingredient__benefit">Reduces hair fall</p>
+      </div>
+      <div class="ingredient-item">
+        <div class="ingredient__image-wrapper"><span>5</span></div>
+        <strong class="ingredient__name">Reetha</strong>
+        <p class="ingredient__benefit">Natural cleanser</p>
+      </div>
+      <div class="ingredient-item">
+        <div class="ingredient__image-wrapper"><span>6</span></div>
+        <strong class="ingredient__name">Black Seeds</strong>
+        <p class="ingredient__benefit">Revitalizes roots</p>
+      </div>
+      <div class="ingredient-item">
+        <div class="ingredient__image-wrapper"><span>7</span></div>
+        <strong class="ingredient__name">Mustard Seeds</strong>
+        <p class="ingredient__benefit">Improves circulation</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Ingredients Showcase",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Ingredients Showcase"
+    }
+  ]
+}
+{% endschema %}

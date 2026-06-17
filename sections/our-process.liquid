@@ -1,0 +1,177 @@
+{%- style -%}
+  .our-process {
+    background-color: #234E3F;
+    padding: 10rem 0;
+    color: #E8DFC8;
+    overflow: hidden;
+  }
+
+  .process__heading {
+    font-family: var(--pw-font-heading);
+    color: #C9A227;
+    font-size: 4.8rem;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  .process__timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  /* Desktop connecting line */
+  .process__timeline::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 50px;
+    height: 1px;
+    background-color: #C9A227;
+    z-index: 1;
+  }
+
+  .process__step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .step__number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #234E3F;
+    border: 2px solid #C9A227;
+    color: #C9A227;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--pw-font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0 auto 3rem;
+    transition: all 0.4s ease;
+  }
+
+  .process__step:hover .step__number {
+    background-color: #C9A227;
+    color: #234E3F;
+    transform: scale(1.1);
+  }
+
+  .step__title {
+    font-family: var(--pw-font-heading);
+    color: #C9A227;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  .step__description {
+    font-family: var(--pw-font-body);
+    color: #E8DFC8;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+
+  @media screen and (max-width: 989px) {
+    .process__timeline {
+      flex-direction: column;
+      gap: 5rem;
+      align-items: flex-start;
+      padding-left: 3rem;
+    }
+    .process__timeline::before {
+      top: 0;
+      bottom: 0;
+      left: 30px;
+      width: 1px;
+      height: auto;
+    }
+    .process__step {
+      display: flex;
+      text-align: left;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+    .step__number {
+      margin: 0;
+      flex-shrink: 0;
+    }
+    .step__title {
+      margin-top: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .our-process {
+      padding: 6rem 0;
+    }
+    .process__heading {
+      font-size: 3.5rem;
+      margin-bottom: 5rem;
+    }
+  }
+{%- endstyle -%}
+
+<div class="our-process">
+  <div class="page-width">
+    <h2 class="process__heading">How Our Oils Are Made</h2>
+    <div class="process__timeline">
+      <div class="process__step">
+        <div class="step__number">1</div>
+        <div class="step__content">
+          <strong class="step__title">Ingredient Selection</strong>
+          <p class="step__description">Sourcing the highest quality organic botanicals from sustainable farms across Pakistan.</p>
+        </div>
+      </div>
+      <div class="process__step">
+        <div class="step__number">2</div>
+        <div class="step__content">
+          <strong class="step__title">Natural Extraction</strong>
+          <p class="step__description">Cold-pressed techniques to ensure every nutrient and vitamin remains potent and pure.</p>
+        </div>
+      </div>
+      <div class="process__step">
+        <div class="step__number">3</div>
+        <div class="step__content">
+          <strong class="step__title">Quality Testing</strong>
+          <p class="step__description">Meticulous laboratory testing to guarantee zero chemicals and 100% purity in every batch.</p>
+        </div>
+      </div>
+      <div class="process__step">
+        <div class="step__number">4</div>
+        <div class="step__content">
+          <strong class="step__title">Premium Packaging</strong>
+          <p class="step__description">Bottled in light-protected glass to preserve biological activity and natural shelf-life.</p>
+        </div>
+      </div>
+      <div class="process__step">
+        <div class="step__number">5</div>
+        <div class="step__content">
+          <strong class="step__title">Direct Delivery</strong>
+          <p class="step__description">Freshly packed and delivered straight to your doorstep with premium care and speed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Our Process",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Our Process"
+    }
+  ]
+}
+{% endschema %}

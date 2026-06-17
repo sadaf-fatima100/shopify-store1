@@ -1,0 +1,126 @@
+{%- style -%}
+  .shop-by-concern {
+    background-color: #ffffff;
+    padding: 8rem 0;
+  }
+
+  .concern__heading {
+    font-family: var(--pw-font-heading);
+    color: var(--pw-primary);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .concern__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .concern-card {
+    background-color: #234E3F;
+    padding: 5rem 3rem;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+  }
+
+  .concern-card svg {
+    width: 40px;
+    height: 40px;
+    color: #C9A227;
+    margin-bottom: 2rem;
+    transition: color 0.4s ease;
+  }
+
+  .concern-card h3 {
+    font-family: var(--pw-font-heading);
+    color: #ffffff;
+    font-size: 2.4rem;
+    margin: 0;
+    transition: color 0.4s ease;
+  }
+
+  .concern-card:hover {
+    background-color: #C9A227;
+    transform: translateY(-5px);
+  }
+
+  .concern-card:hover svg,
+  .concern-card:hover h3 {
+    color: #222222;
+  }
+
+  @media screen and (max-width: 989px) {
+    .concern__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .shop-by-concern {
+      padding: 5rem 0;
+    }
+    .concern__heading {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+    .concern__grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+{%- endstyle -%}
+
+<div class="shop-by-concern">
+  <div class="page-width">
+    <h2 class="concern__heading">Shop By Your Hair Concern</h2>
+    <div class="concern__grid">
+      <a href="/collections/hair-fall" class="concern-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 21l2-2m2 2l-2-2m0 0V3m0 0L8 5m4-2l4 2"></path></svg>
+        <h3>Hair Fall</h3>
+      </a>
+      <a href="/collections/hair-growth" class="concern-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <h3>Hair Growth</h3>
+      </a>
+      <a href="/collections/dry-scalp" class="concern-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10m0 0l-3-3m3 3l3-3m-9 9h12"></path></svg>
+        <h3>Dry Scalp</h3>
+      </a>
+      <a href="/collections/hair-thinning" class="concern-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <h3>Hair Thinning</h3>
+      </a>
+      <a href="/collections/frizzy-hair" class="concern-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 18M19 3L5 21"></path></svg>
+        <h3>Frizzy Hair</h3>
+      </a>
+      <a href="/collections/weak-roots" class="concern-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+        <h3>Weak Roots</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Shop By Concern",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Shop By Concern"
+    }
+  ]
+}
+{% endschema %}

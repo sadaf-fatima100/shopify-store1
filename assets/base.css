@@ -3595,3 +3595,281 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+/ *   P U R E W A Y   O R G A N I C S   C U S T O M   S T Y L E S   * /  
+ /* PUREWAY ORGANICS CUSTOM STYLES */
+
+:root {
+  /* Brand Colors */
+  --pw-primary: #234E3F;
+  --pw-secondary: #E8DFC8;
+  --pw-accent: #C9A227;
+  --pw-bg: #F8F6F1;
+  --pw-text: #222222;
+
+  /* Typography */
+  --pw-font-heading: 'Cormorant Garamond', serif;
+  --pw-font-body: 'Jost', sans-serif;
+
+  /* Overrides for Dawn Variables */
+  --color-foreground: 34, 34, 34; /* #222222 */
+  --color-background: 248, 246, 241; /* #F8F6F1 */
+  --gradient-background: #F8F6F1;
+  --color-button: 201, 162, 39; /* #C9A227 */
+  --color-button-text: 34, 34, 34; /* #222222 */
+  --color-secondary-button: 248, 246, 241;
+  --color-secondary-button-text: 35, 78, 63; /* #234E3F */
+  --color-link: 35, 78, 63;
+  --color-base-text: 34, 34, 34;
+  --color-base-background-1: 248, 246, 241;
+  --color-base-background-2: 232, 223, 200; /* #E8DFC8 */
+  --color-base-solid-button-labels: 34, 34, 34;
+  --color-base-outline-button-labels: 35, 78, 63;
+  --color-base-accent-1: 35, 78, 63;
+  --color-base-accent-2: 201, 162, 39;
+
+  --font-body-family: var(--pw-font-body);
+  --font-heading-family: var(--pw-font-heading);
+}
+
+body, .color-background-1, .color-background-2, .color-inverse, .color-accent-1, .color-accent-2 {
+  font-family: var(--pw-font-body) !important;
+  color: var(--pw-text) !important;
+  background-color: var(--pw-bg) !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--pw-font-heading) !important;
+  color: var(--pw-primary) !important;
+}
+
+.button, .shopify-challenge__button, .customer button {
+  font-family: var(--pw-font-body) !important;
+  background-color: var(--pw-accent) !important;
+  color: var(--pw-text) !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.button:hover, .shopify-challenge__button:hover, .customer button:hover {
+  background-color: var(--pw-primary) !important;
+  color: var(--pw-bg) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(35, 78, 63, 0.2) !important;
+}
+
+.button--secondary {
+  background-color: transparent !important;
+  border: 1px solid var(--pw-accent) !important;
+  color: var(--pw-accent) !important;
+}
+
+.button--secondary:hover {
+  background-color: var(--pw-accent) !important;
+  color: var(--pw-text) !important;
+}
+
+/* Premium Spacing & Luxury Feel */
+.page-width {
+  max-width: 1400px !important;
+  padding: 0 2rem !important;
+}
+
+@media screen and (min-width: 750px) {
+  .page-width {
+    padding: 0 5rem !important;
+  }
+}
+
+/* Smooth Transitions */
+a, button, .card-wrapper {
+  transition: all 0.3s ease !important;
+}
+
+/* Card Hover */
+.card-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Product Card Customization */
+.product-card-wrapper {
+  background-color: #F8F6F1 !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(35, 78, 63, 0.1) !important;
+}
+
+.card__inner {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.card__content {
+  padding: 2rem !important;
+}
+
+.card__heading {
+  font-family: var(--pw-font-heading) !important;
+  font-size: 2rem !important;
+  color: var(--pw-primary) !important;
+  margin-bottom: 1rem !important;
+}
+
+.price {
+  font-family: var(--pw-font-body) !important;
+  font-weight: 600 !important;
+  color: var(--pw-accent) !important;
+  font-size: 1.8rem !important;
+}
+
+.quick-add__submit {
+  background-color: var(--pw-accent) !important;
+  color: var(--pw-text) !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease !important;
+  min-height: 44px !important;
+}
+
+.quick-add__submit:hover {
+  background-color: var(--pw-primary) !important;
+  color: #ffffff !important;
+}
+
+.collection__title .title {
+  font-family: var(--pw-font-heading) !important;
+  color: var(--pw-primary) !important;
+  font-size: 4rem !important;
+  text-align: center;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Product Page Premium Styling */
+.product__title h1 {
+  font-family: var(--pw-font-heading) !important;
+  color: var(--pw-primary) !important;
+  font-size: 4rem !important;
+  line-height: 1.1;
+  margin-bottom: 2rem !important;
+}
+
+.product .price--large {
+  font-size: 2.4rem !important;
+  color: var(--pw-accent) !important;
+}
+
+.product-form__submit {
+  background-color: var(--pw-accent) !important;
+  color: var(--pw-text) !important;
+  border-radius: 50px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1.8rem !important;
+  min-height: 5.5rem !important;
+}
+
+.product-form__submit:hover {
+  background-color: var(--pw-primary) !important;
+  color: #ffffff !important;
+}
+
+.shopify-payment-button__button--unbranded {
+  background-color: var(--pw-primary) !important;
+  color: #ffffff !important;
+  border-radius: 50px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 1.8rem !important;
+  min-height: 5.5rem !important;
+}
+
+.product__trust-badges {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(232, 223, 200, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.trust-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-family: var(--pw-font-body);
+  font-size: 1.4rem;
+  color: var(--pw-primary);
+  font-weight: 600;
+}
+
+.trust-badge-item svg {
+  width: 20px;
+  height: 20px;
+  color: var(--pw-accent);
+}
+
+.product__description {
+  font-family: var(--pw-font-body) !important;
+  font-size: 1.6rem !important;
+  line-height: 1.8 !important;
+  color: var(--pw-text) !important;
+}
+
+/* Global Animations */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Luxury Button Hover Effect */
+.button::after, .shopify-payment-button__button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
+
+.button:hover::after, .shopify-payment-button__button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll Trigger Class */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.intersecting {
+  opacity: 1;
+  transform: translateY(0);
+}

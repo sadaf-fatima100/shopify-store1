@@ -1,0 +1,149 @@
+{%- style -%}
+  .about-pureway {
+    background-color: #F8F6F1;
+    padding: 10rem 0;
+  }
+
+  .about__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
+
+  .about__image {
+    flex: 1;
+    background-color: #E8DFC8;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .about__image::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid rgba(35, 78, 63, 0.2);
+    border-radius: 8px;
+  }
+
+  .about__image span {
+    font-family: var(--pw-font-heading);
+    color: var(--pw-primary);
+    font-size: 3rem;
+    opacity: 0.3;
+  }
+
+  .about__content {
+    flex: 1.2;
+  }
+
+  .about__heading {
+    font-family: var(--pw-font-heading);
+    color: var(--pw-primary);
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+  }
+
+  .about__text {
+    font-family: var(--pw-font-body);
+    color: #222222;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+
+  .about__mission {
+    border-left: 3px solid #C9A227;
+    padding-left: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .about__mission p {
+    font-family: var(--pw-font-body);
+    font-weight: 600;
+    color: var(--pw-primary);
+    font-size: 2rem;
+    line-height: 1.4;
+    font-style: italic;
+  }
+
+  .about__cta {
+    display: inline-block;
+    background-color: #234E3F;
+    color: #F8F6F1;
+    padding: 1.8rem 4.5rem;
+    text-decoration: none;
+    font-family: var(--pw-font-body);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .about__cta:hover {
+    background-color: #C9A227;
+    color: #222222;
+    transform: translateY(-3px);
+  }
+
+  @media screen and (max-width: 989px) {
+    .about__wrapper {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .about__heading {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .about-pureway {
+      padding: 6rem 0;
+    }
+  }
+{%- endstyle -%}
+
+<div class="about-pureway">
+  <div class="page-width">
+    <div class="about__wrapper">
+      <div class="about__image">
+        <span>PureWay Organics</span>
+      </div>
+      <div class="about__content">
+        <h2 class="about__heading">Our Story</h2>
+        <div class="about__text">
+          <p>Founded on the principles of purity and performance, PureWay Organics brings you the essence of nature's most powerful botanicals. We believe that true hair care lies in the perfect harmony between traditional wisdom and modern formulation.</p>
+          <p>Each drop of our oil is a result of meticulous ingredient selection, sourced directly from organic farms and processed with care to retain every bit of its natural potency. We are committed to transparency, quality, and your hair's long-term health.</p>
+        </div>
+        <div class="about__mission">
+          <p>"To provide the purest botanical solutions for hair health, empowering our community with nature's wisdom."</p>
+        </div>
+        <a href="/pages/about-us" class="about__cta">Learn More About Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "About PureWay",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "About PureWay"
+    }
+  ]
+}
+{% endschema %}

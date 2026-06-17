@@ -1,0 +1,166 @@
+{%- style -%}
+  .testimonials {
+    background-color: #E8DFC8;
+    padding: 8rem 0;
+  }
+
+  .testimonials__heading {
+    font-family: var(--pw-font-heading);
+    color: var(--pw-primary);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .testimonial-card {
+    background: #ffffff;
+    padding: 4rem 3rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(35, 78, 63, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F8F6F1;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #C9A227;
+  }
+
+  .testimonial__photo svg {
+    width: 40px;
+    height: 40px;
+    color: #C9A227;
+  }
+
+  .testimonial__rating {
+    margin-bottom: 1.5rem;
+    color: #C9A227;
+    font-size: 2rem;
+  }
+
+  .testimonial__text {
+    font-family: var(--pw-font-body);
+    color: #222222;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+  }
+
+  .testimonial__author {
+    font-family: var(--pw-font-heading);
+    color: var(--pw-primary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .testimonial__badge {
+    font-family: var(--pw-font-body);
+    color: #C9A227;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .testimonial__badge svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  @media screen and (max-width: 989px) {
+    .testimonials__grid {
+      grid-template-columns: 1fr;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .testimonials {
+      padding: 5rem 0;
+    }
+    .testimonials__heading {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+{%- endstyle -%}
+
+<div class="testimonials">
+  <div class="page-width">
+    <h2 class="testimonials__heading">What Our Customers Say</h2>
+    <div class="testimonials__grid">
+      <div class="testimonial-card">
+        <div class="testimonial__photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
+        <div class="testimonial__rating">★★★★★</div>
+        <p class="testimonial__text">"I've tried many oils, but PureWay Organics is truly different. My hair feels much stronger and the shine is incredible. Highly recommended!"</p>
+        <span class="testimonial__author">Ayesha Khan</span>
+        <div class="testimonial__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Verified Customer
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial__photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
+        <div class="testimonial__rating">★★★★★</div>
+        <p class="testimonial__text">"The Rosemary oil is a game changer for my scalp. I've noticed significantly less hair fall after just three weeks of use."</p>
+        <span class="testimonial__author">Zainab Malik</span>
+        <div class="testimonial__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Verified Customer
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial__photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
+        <div class="testimonial__rating">★★★★★</div>
+        <p class="testimonial__text">"Luxury packaging and premium quality product. It smells so natural and works wonders on frizzy hair. Best organic brand in Pakistan."</p>
+        <span class="testimonial__author">Sara Ahmed</span>
+        <div class="testimonial__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Verified Customer
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Testimonials"
+    }
+  ]
+}
+{% endschema %}

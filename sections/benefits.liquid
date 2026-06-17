@@ -1,0 +1,129 @@
+{%- style -%}
+  .benefits {
+    background-color: #F8F6F1;
+    padding: 8rem 0;
+  }
+
+  .benefits__heading {
+    font-family: var(--pw-font-heading);
+    color: var(--pw-primary);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .benefits__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .benefit-card {
+    background: #ffffff;
+    padding: 4rem 3rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(232, 223, 200, 0.3);
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(35, 78, 63, 0.08);
+    border-color: var(--pw-accent);
+  }
+
+  .benefit-card svg {
+    width: 48px;
+    height: 48px;
+    color: var(--pw-primary);
+    margin-bottom: 2.5rem;
+  }
+
+  .benefit-card h3 {
+    font-family: var(--pw-font-heading);
+    color: var(--pw-primary);
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .benefit-card p {
+    font-family: var(--pw-font-body);
+    color: var(--pw-text);
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 989px) {
+    .benefits__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .benefits {
+      padding: 5rem 0;
+    }
+    .benefits__heading {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+    .benefits__grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+{%- endstyle -%}
+
+<div class="benefits">
+  <div class="page-width">
+    <h2 class="benefits__heading">Why Choose PureWay Organics</h2>
+    <div class="benefits__grid">
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+        <h3>Hair Growth Support</h3>
+        <p>Our unique botanical blend stimulates follicles to promote natural hair growth and thickness.</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <h3>Scalp Nourishment</h3>
+        <p>Deeply hydrates and balances the scalp environment for healthier hair from the roots.</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3 2 7a9 9 0 0 1-7.77 8.94c0 .33.02.67.02 1.06Z"/><path d="M9.1 20c-1.6.6-3.4 0-4-.7-1.4.3-2 0-2 .6 0 .5.6.8 2 .8s2.6-1.1 4-.7Z"/></svg>
+        <h3>Reduced Hair Fall</h3>
+        <p>Strengthens the hair shaft and anchors roots to significantly reduce daily hair fall.</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <h3>Natural Shine</h3>
+        <p>Restores natural luster and smoothness to dull hair without using harmful silicones.</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        <h3>Stronger Hair</h3>
+        <p>Infuses essential proteins and vitamins into the hair structure for maximum strength.</p>
+      </div>
+      <div class="benefit-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+        <h3>Chemical-Free Care</h3>
+        <p>Zero sulfates, parabens, or artificial fragrances. Purely nature's best for your hair.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Benefits",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Benefits"
+    }
+  ]
+}
+{% endschema %}
