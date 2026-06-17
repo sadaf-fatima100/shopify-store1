@@ -1,77 +1,77 @@
 {%- style -%}
   .benefits {
     background-color: #F8F6F1;
-    padding: 8rem 0;
+    padding: 12rem 0;
   }
 
   .benefits__heading {
     font-family: var(--pw-font-heading);
     color: var(--pw-primary);
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 300;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
 
   .benefits__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 5rem;
   }
 
   .benefit-card {
-    background: #ffffff;
-    padding: 4rem 3rem;
-    border-radius: 12px;
+    background: transparent !important;
+    padding: 0;
+    border-radius: 0;
     text-align: center;
-    transition: all 0.4s ease;
-    border: 1px solid rgba(232, 223, 200, 0.3);
-  }
-
-  .benefit-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(35, 78, 63, 0.08);
-    border-color: var(--pw-accent);
+    transition: all 0.5s ease;
+    border: none !important;
   }
 
   .benefit-card svg {
-    width: 48px;
-    height: 48px;
-    color: var(--pw-primary);
-    margin-bottom: 2.5rem;
+    width: 32px;
+    height: 32px;
+    color: var(--pw-accent);
+    margin-bottom: 3rem;
+    stroke-width: 1px !important;
   }
 
   .benefit-card h3 {
     font-family: var(--pw-font-heading);
     color: var(--pw-primary);
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
   }
 
   .benefit-card p {
     font-family: var(--pw-font-body);
     color: var(--pw-text);
-    font-size: 1.6rem;
-    line-height: 1.6;
-    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-weight: 300;
+    opacity: 0.8;
   }
 
   @media screen and (max-width: 989px) {
     .benefits__grid {
       grid-template-columns: repeat(2, 1fr);
+      gap: 5rem 3rem;
     }
   }
 
   @media screen and (max-width: 749px) {
     .benefits {
-      padding: 5rem 0;
+      padding: 8rem 0;
     }
     .benefits__heading {
       font-size: 3rem;
-      margin-bottom: 3rem;
     }
     .benefits__grid {
       grid-template-columns: 1fr;
-      gap: 2rem;
     }
   }
 {%- endstyle -%}

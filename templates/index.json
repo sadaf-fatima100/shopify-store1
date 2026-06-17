@@ -62,23 +62,6 @@
       "type": "our-process",
       "settings": {}
     },
-    "featured_blog": {
-      "type": "featured-blog",
-      "settings": {
-        "title": "Hair Care Journal",
-        "heading_size": "h1",
-        "blog": "news",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "color_scheme": "scheme-1",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "columns_mobile": "1",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
     "newsletter": {
       "type": "newsletter",
       "settings": {
@@ -99,7 +82,6 @@
     "testimonials",
     "about_pureway",
     "our_process",
-    "featured_blog",
     "newsletter"
   ]
 }

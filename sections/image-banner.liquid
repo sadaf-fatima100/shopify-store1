@@ -1,94 +1,72 @@
 {%- style -%}
   #Banner-{{ section.id }} {
     background-color: #234E3F;
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 20c0 10 10 20 20 20s20-10 20-20-10-20-20-20-20 10-20 20zm50 40c0 10 10 20 20 20s20-10 20-20-10-20-20-20-20 10-20 20zM0 80c0 10 10 20 20 20s20-10 20-20-10-20-20-20-20 10-20 20z' fill='%23E8DFC8' fill-opacity='0.03'/%3E%3C/svg%3E");
-    min-height: 80vh;
+    background-image: linear-gradient(rgba(35, 78, 63, 0.4), rgba(35, 78, 63, 0.4)), url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 20c0 10 10 20 20 20s20-10 20-20-10-20-20-20-20 10-20 20zm50 40c0 10 10 20 20 20s20-10 20-20-10-20-20-20-20 10-20 20zM0 80c0 10 10 20 20 20s20-10 20-20-10-20-20-20-20 10-20 20z' fill='%23E8DFC8' fill-opacity='0.02'/%3E%3C/svg%3E");
+    min-height: 90vh;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   #Banner-{{ section.id }} .banner__box {
     background: transparent !important;
     text-align: center;
-    max-width: 80rem;
-    margin: 0 auto;
+    max-width: 100rem;
+    padding: 0 2rem;
   }
 
   #Banner-{{ section.id }} .banner__heading {
     font-family: var(--pw-font-heading) !important;
-    color: var(--pw-accent) !important;
-    font-size: 6rem !important;
-    line-height: 1.1;
-    margin-bottom: 2rem;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInLift 1s ease forwards 0.3s;
+    color: var(--pw-secondary) !important;
+    font-size: 8rem !important;
+    font-weight: 300 !important;
+    line-height: 1;
+    margin-bottom: 3rem;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase;
   }
 
   #Banner-{{ section.id }} .banner__text {
     font-family: var(--pw-font-body) !important;
     color: var(--pw-secondary) !important;
-    font-size: 2rem !important;
-    line-height: 1.6;
-    margin-bottom: 4rem;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInLift 1s ease forwards 0.6s;
-  }
-
-  #Banner-{{ section.id }} .banner__buttons {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInLift 1s ease forwards 0.9s;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
+    font-size: 1.8rem !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+    margin-bottom: 5rem;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #Banner-{{ section.id }} .button--primary {
-    background-color: var(--pw-accent) !important;
-    color: var(--pw-text) !important;
-    padding: 1.5rem 4rem !important;
-    font-size: 1.6rem !important;
-    font-weight: 600 !important;
-    border-radius: 50px !important;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    background-color: var(--pw-secondary) !important;
+    color: var(--pw-primary) !important;
+    padding: 2rem 5rem !important;
+    font-size: 1.2rem !important;
+    letter-spacing: 0.3em !important;
+    border-radius: 0 !important;
   }
 
   #Banner-{{ section.id }} .button--secondary {
     background-color: transparent !important;
-    border: 1px solid var(--pw-accent) !important;
-    color: var(--pw-accent) !important;
-    padding: 1.5rem 4rem !important;
-    font-size: 1.6rem !important;
-    font-weight: 600 !important;
-    border-radius: 50px !important;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  @keyframes fadeInLift {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    border: 1px solid var(--pw-secondary) !important;
+    color: var(--pw-secondary) !important;
+    padding: 2rem 5rem !important;
+    font-size: 1.2rem !important;
+    letter-spacing: 0.3em !important;
+    border-radius: 0 !important;
   }
 
   @media screen and (max-width: 749px) {
     #Banner-{{ section.id }} {
-      min-height: 60vh;
-      padding: 4rem 2rem;
+      min-height: 70vh;
     }
     #Banner-{{ section.id }} .banner__heading {
-      font-size: 3.5rem !important;
+      font-size: 4rem !important;
     }
     #Banner-{{ section.id }} .banner__text {
-      font-size: 1.6rem !important;
-    }
-    #Banner-{{ section.id }} .banner__buttons {
-      flex-direction: column;
-      gap: 1.5rem;
+      font-size: 1.4rem !important;
     }
   }
 {%- endstyle -%}

@@ -64,8 +64,47 @@
   endif
 -%}
 
+<style>
+  .featured-collection-wrapper {
+    background: #F8F6F1;
+    padding: 10rem 0;
+  }
+
+  .featured-collection-wrapper .title-wrapper {
+    margin-bottom: 6rem !important;
+    text-align: center;
+  }
+
+  .featured-collection-wrapper .title {
+    font-family: var(--pw-font-heading) !important;
+    font-size: 5rem !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.1em;
+    color: var(--pw-primary);
+    text-transform: uppercase;
+  }
+
+  .featured-collection-wrapper .grid {
+    column-gap: 3rem !important;
+    row-gap: 6rem !important;
+  }
+
+  @media screen and (max-width: 749px) {
+    .featured-collection-wrapper {
+      padding: 6rem 0;
+    }
+    .featured-collection-wrapper .title {
+      font-size: 3rem !important;
+    }
+    .featured-collection-wrapper .grid {
+      column-gap: 1.5rem !important;
+      row-gap: 4rem !important;
+    }
+  }
+</style>
+
 <div
-  class="color-{{ section.settings.color_scheme }} isolate gradient"
+  class="featured-collection-wrapper color-{{ section.settings.color_scheme }} isolate gradient"
 >
   <div
     class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"

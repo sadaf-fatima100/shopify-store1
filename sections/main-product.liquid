@@ -1,6 +1,61 @@
+<style>
+  .product-info-wrapper {
+    padding-left: 5rem;
+  }
+
+  .product__title h1 {
+    font-family: var(--pw-font-heading) !important;
+    font-weight: 300 !important;
+    font-size: 5.5rem !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    color: var(--pw-primary) !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .product .price--large {
+    font-family: var(--pw-font-body) !important;
+    font-size: 3rem !important;
+    font-weight: 300 !important;
+    color: var(--pw-accent) !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  .product-form__input--pill input[type='radio'] + label {
+    border-radius: 0 !important;
+    padding: 1.2rem 4rem !important;
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  .product-form__submit {
+    border-radius: 0 !important;
+    background-color: var(--pw-primary) !important;
+    height: 6.5rem !important;
+    font-size: 1.4rem !important;
+    letter-spacing: 0.3em !important;
+    font-weight: 400 !important;
+  }
+
+  .product-form__submit:hover {
+    background-color: var(--pw-accent) !important;
+  }
+
+  @media screen and (max-width: 989px) {
+    .product-info-wrapper {
+      padding-left: 0;
+      margin-top: 4rem;
+    }
+    .product__title h1 {
+      font-size: 3.5rem !important;
+    }
+  }
+</style>
+
 <product-info
   id="MainProduct-{{ section.id }}"
-  class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}"
+  class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }} product-luxury"
   data-section="{{ section.id }}"
   data-product-id="{{ product.id }}"
   data-update-url="true"

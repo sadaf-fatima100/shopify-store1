@@ -1,54 +1,46 @@
 {%- style -%}
   .trust-bar {
     background-color: #E8DFC8;
-    padding: 2.5rem 0;
-    border-bottom: 1px solid rgba(35, 78, 63, 0.1);
+    padding: 3.5rem 0;
+    border-bottom: 1px solid rgba(35, 78, 63, 0.05);
   }
 
   .trust-bar__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .trust-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
-    flex: 1;
-    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
   }
 
   .trust-item svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     color: #234E3F;
-    flex-shrink: 0;
+    stroke-width: 1px !important;
   }
 
   .trust-item span {
     font-family: var(--pw-font-body);
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 400;
     color: #234E3F;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
+    letter-spacing: 0.2em;
   }
 
   @media screen and (max-width: 989px) {
     .trust-bar__wrapper {
-      overflow-x: auto;
-      justify-content: flex-start;
-      padding-bottom: 1rem;
-      scrollbar-width: none;
-    }
-    .trust-bar__wrapper::-webkit-scrollbar {
-      display: none;
-    }
-    .trust-item {
-      min-width: 200px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem 5rem;
     }
   }
 {%- endstyle -%}
